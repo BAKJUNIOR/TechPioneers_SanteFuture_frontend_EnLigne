@@ -1,0 +1,107 @@
+<div class="flex h-screen">
+    <!-- Sidebar Section -->
+    <aside class="w-64 bg-slate-800 text-blueGray-500 h-full">
+      <app-sidebar></app-sidebar>
+    </aside>
+  
+    <!-- Dashboard Content Section -->
+    <div class="flex flex-col flex-1 h-full bg-slate-100">
+      <!-- Navbar -->
+      <header class="bg-slate-200 shadow-md">
+        <app-admin-navbar></app-admin-navbar>
+      </header>
+  
+      <!-- Main Content -->
+      <main class="flex-1 p-6 overflow-y-auto">
+        <!-- Welcome Card -->
+        <div class="mb-8">
+          <div class="flex flex-col md:flex-row justify-between items-center bg-white shadow-lg rounded-lg overflow-hidden p-6">
+            <div class="hidden md:block w-1/3">
+              <img class="h-40 w-full object-cover rounded-md" src="assets/img/welcome.png" alt="Welcome Image">
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+              <p class="text-gray-600">Welcome back,</p>
+              <h2 class="text-blue-600 text-3xl font-bold">Sarah Kouakou</h2>
+              <p class="text-sm text-gray-500 mt-2">Bienvenue Sarah tu as un RDV aujourd'hui avec  le medcin</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          <!-- Stat Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <span class="text-blue-600 font-bold text-lg">Appointments</span>
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-orange-500 text-2xl font-semibold">43</span>
+            </div>
+            <span class="text-sm text-gray-500 mt-2">Total number of appointments</span>
+          </div>
+          <!-- Stat Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <span class="text-blue-600 font-bold text-lg">Visit Rate</span>
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-orange-500 text-2xl font-semibold">12%</span>
+            </div>
+            <span class="text-sm text-gray-500 mt-2">Total visit rate</span>
+          </div>
+          <!-- Stat Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <span class="text-blue-600 font-bold text-lg">Health Checkups</span>
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-orange-500 text-2xl font-semibold">12%</span>
+            </div>
+            <span class="text-sm text-gray-500 mt-2">Total health checkups</span>
+          </div>
+        </div>
+  
+        <!-- Additional Info Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6 h-96">
+            <!-- Placeholder for future content -->
+            <span class="text-gray-400">Placeholder Content</span>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 h-96">
+            <!-- Placeholder for future content -->
+            <span class="text-gray-400">Placeholder Content</span>
+          </div>
+          <!-- Medications List -->
+          <div class="bg-white rounded-lg shadow-lg p-6 h-96">
+            <p class="font-semibold text-xl">Medications</p>
+            <div class="mt-4 space-y-4">
+              <!-- Medication Item -->
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Econochlor</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Desmopressin tabs</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Abciximab injection</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Kevzara sarilumab</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Gentamicin topical</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Paliperidone palmitate</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Sermorelin injectable</span>
+                <span class="text-gray-600">1-0-1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  

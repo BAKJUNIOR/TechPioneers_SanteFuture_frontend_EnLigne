@@ -6,6 +6,8 @@ import { AdminComponent } from './layouts/admin/admin.component';
 import { ConsultationComponent } from './views/patient/consultation/consultation.component';
 import { FormsComponent } from './views/patient/forms/forms.component';
 import { LoginComponent } from './views/auth/login/login.component';
+import { DashboardPatientComponent } from './views/dashboard-patient/dashboard-patient.component';
+import { CarnetComponent } from './views/carnet/carnet.component';
 
 export const routes: Routes = [
   // Auth views
@@ -19,6 +21,15 @@ export const routes: Routes = [
     path: '',
     component: AdminComponent,
     children: [{ path: '', component: AdminComponent }],
+  },
+  {
+    path: 'dashboard-patient',
+    component: DashboardPatientComponent,
+    children: [{ path: '', component: DashboardComponent },
+      { path: 'carnet', component: CarnetComponent}
+      
+
+    ],
   },
 
   // Patien views
