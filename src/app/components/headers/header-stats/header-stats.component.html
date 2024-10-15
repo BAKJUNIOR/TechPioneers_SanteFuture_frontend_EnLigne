@@ -1,0 +1,70 @@
+<!-- Header -->
+<div class=" md:pt-32 pb-20 pt-1 space-y-6 ">
+  <span class="mx-14 font-serif text-xl">
+    Tableau de bord</span
+  >
+  <div class="px-4 md:px-6 mx-auto w-full">
+    <div>
+      <!-- Card stats -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+          <app-card-stats
+            statSubtitle="Les patients d'aujourd'hui"
+            statTitle="597"
+            statArrow="up"
+            statPercentColor="text-emerald-500"
+            statDescripiron="Since last month"
+            statIconName="far fa-chart-bar"
+            statIconColor="bg-red-500"
+          ></app-card-stats>
+        </div>
+        <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+          <app-card-stats
+            statSubtitle="Rendez-vous"
+            statTitle="256"
+            statArrow="down"
+            statPercentColor="text-red-500"
+            statDescripiron="Since last week"
+            statIconName="fas fa-chart-pie"
+            statIconColor="bg-orange-500"
+          ></app-card-stats>
+        </div>
+        <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+          <app-card-stats
+            statSubtitle="Opérations actuelles"
+            statTitle="924"
+            statArrow="down"
+            statPercentColor="text-orange-500"
+            statDescripiron="Since yesterday"
+            statIconName="fas fa-users"
+            statIconColor="bg-pink-500"
+          ></app-card-stats>
+        </div>
+        <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+          <app-card-stats
+            statSubtitle="Rendez-vous en ligne"
+            statTitle="493"
+            statArrow="up"
+            statPercent="12"
+            statPercentColor="text-emerald-500"
+            statDescripiron="Since last month"
+            statIconName="fas fa-percent"
+            statIconColor="bg-emerald-500"
+          ></app-card-stats>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 md:px-6 mx-auto w-full">
+    <!-- Card stats -->
+    <div class="flex flex-row mt-16">
+      <div class="w-full lg:w-full xl:w-full px-4">
+        <app-card-table-bars></app-card-table-bars>
+      </div>
+      <div class="w-full lg:w-full xl:w-full px-4">
+        <app-card-table-stats></app-card-table-stats>
+      </div>
+    </div>
+  </div>
+</div>

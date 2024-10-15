@@ -1,0 +1,521 @@
+<div
+  class="container mx-auto max-w-full bg-white justify-between flex flex-col h-screen"
+>
+  <!-- Header -->
+  <div
+    class="flex mx-3 justify-between items-center mb-5 border border-red-500"
+  >
+    <!-- Logo -->
+    <div class="text-white text-lg font-bold mb-4">
+      <img
+        class="md:w-[196px] w-20 h-[53px] top-[18px]"
+        src="assets/img/logo-sante.png"
+      />
+    </div>
+
+    <!-- Boutons Login et Register pour grands écrans -->
+    <div class="hidden md:flex space-x-2">
+      <a
+        href="#"
+        class="px-4 py-2 border border-blue-500 text-blue-600 font-semibold rounded hover:bg-gray-300"
+        >Se connecter</a
+      >
+      <a
+        href="#"
+        class="px-4 py-2 border border-orange-500 text-orange-500 font-semibold rounded hover:bg-yellow-600"
+        >S'inscrire</a
+      >
+    </div>
+
+    <!-- Menu hamburger pour mobiles -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-black focus:outline-none">
+        <!-- Icone du menu hamburger -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden hidden bg-blue-700">
+    <a href="#" class="block text-black px-4 py-2 hover:bg-blue-500">Home</a>
+    <a href="#" class="block text-black px-4 py-2 hover:bg-blue-500">About</a>
+    <a href="#" class="block text-black px-4 py-2 hover:bg-blue-500"
+      >Services</a
+    >
+    <a href="#" class="block text-black px-4 py-2 hover:bg-blue-500">Contact</a>
+    <!-- Boutons Login et Register pour mobile -->
+    <a
+      href="#"
+      class="block text-blue-600 bg-gray-200 px-4 py-2 mt-2 hover:bg-gray-300​ text-center"
+    >
+      Se connecter
+    </a>
+    <a
+      href="#"
+      class="block text-blue-600 bg-gray-200 px-4 py-2 mt-2 hover:bg-gray-300​ text-center"
+    >
+      S'inscrire
+    </a>
+  </div>
+  <!-- Header -->
+
+  <section class="content-normal flex flex-col max-w-full max-auto">
+    <!-- <div class="flex w-full h-[777px]  left-0 top-0 items-center"></div> -->
+
+    <div
+      class="w-full flex flex-col md:flex-row content-center pr-px left-0 top-24 justify-center items-center"
+    >
+      <img class="w-full md:absolute mt-4" src="assets/img/tre2.png" alt="" />
+      <div
+        class="relative grow shrink basis-0 self-stretch justify-end items-center gap-[30px] inline-flex"
+      >
+        <div
+          class="w-[573px] flex-col justify-center items-start gap-[30px] inline-flex"
+        >
+          <div
+            class="w-[542px] h-40 text-white text-[58px] font-bold font-['Montserrat'] leading-[80px] tracking-tight"
+          >
+            Bienvenue chez Santé Future
+          </div>
+          <div class="justify-start items-start gap-2.5 inline-flex">
+            <div
+              class="px-10 py-[15px] bg-[#fc724d] rounded-[5px] flex-col justify-start items-center gap-2.5 inline-flex cursor-pointer"
+            >
+              <div
+                class="text-center text-white text-sm font-bold font-['Montserrat'] leading-snug tracking-tight"
+              >
+                Consultation
+              </div>
+            </div>
+            <div
+              class="px-10 py-[15px] bg-white rounded-[5px] flex-col justify-start items-center gap-2.5 inline-flex cursor-pointer"
+            >
+              <div
+                class="text-center text-blue-500 text-sm font-bold font-['Montserrat'] leading-snug tracking-tight"
+              >
+                Contact
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[704px] h-[682px] justify-center items-center flex">
+          <div
+            class="grow shrink basis-0 self-stretch pl-[52px] pr-[97px] justify-start items-center inline-flex"
+          >
+            <div
+              class="flex w-[24rem] h-[35rem] -mt-18 mx-20 ml-16 rounded-t-full absolute border border-white border-b-transparent"
+            ></div>
+
+            <div
+              class="flex w-[22rem] h-[35rem] -mb-4 mx-20 rounded-full absolute border border-white border-b-transparent"
+            ></div>
+            <div
+              class="flex w-[22rem] h-[35rem] mt-10 bg-white mx-20 rounded-full absolute border border-white border-b-transparent"
+            ></div>
+
+            <div
+              class="w-[555px] h-[756.07px] relative flex-col justify-start items-start flex"
+            >
+              <img
+                class="w-[448px] h-2/2 mt-12"
+                src="assets/img/medium-shot-smiley-doctor-with-coat.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section 1 -->
+
+    <!-- Section 2 -->
+    <div class="px-0 w-full justify-center items-center inline-flex">
+      <div
+        class="grow-0 shrink basis-0 self-stretch flex-col justify-start items-start inline-flex"
+      >
+        <div
+          class="py-[50px] justify-start items-center gap-[30px] inline-flex"
+        >
+          <div
+            class="w-[153px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[103px] h-[34px] pl-[0.01px] pt-[0.04px] pb-[0.14px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/col-md-2 sec-4.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-[146px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[83px] h-[59px] pt-[0.02px] pb-[0.03px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/col-md-2 sec-3.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-[152px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[102px] h-[75px] pt-[0.15px] pb-[0.01px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/col-md-2 sec-2.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-[151px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[103px] h-[42px] pb-[0.02px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/fa-brands-4.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-[151px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[104px] h-[62px] px-[0.16px] py-[0.13px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/col-md-2 sec-1.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-[151px] flex-col justify-start items-center inline-flex"
+          >
+            <div
+              class="w-[76px] h-[72px] pl-[0.12px] pr-[0.13px] pt-[0.14px] justify-center items-center inline-flex"
+            >
+              <img src="assets/img/col-md-2 sec-.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Section 3 -->
+
+    <div
+      class="flex flex-col w-full min-h-screen px-4 bg-[#ddeefe] justify-center items-center"
+    >
+      <div class="flex flex-col w-full justify-center items-center">
+        <div
+          class="flex flex-col md:flex-row md:px-20 py-20 justify-center space-x-8 items-center gap-8 w-full"
+        >
+          <div
+            class="w-full md:w-[507px] flex flex-col justify-start items-start gap-8"
+          >
+            <div class="w-[94px] h-[7px] bg-[#fc724d]"></div>
+            <div
+              class="text-[#252b42] text-[32px] md:text-[40px] font-bold font-montserrat leading-[40px] md:leading-[50px] tracking-tight"
+            >
+              Notre département
+            </div>
+            <div
+              class="text-[#727272] text-sm font-normal font-montserrat leading-tight tracking-tight"
+            >
+              Problems trying to resolve the conflict between <br />the two
+              major realms of Classical physics: <br />Newtonian mechanics
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span
+                class="text-[#fc724d] text-sm font-bold font-montserrat leading-normal tracking-tight"
+                >Learn More</span
+              >
+              <div class="w-[9px] h-4 pr-[0.38px] flex items-center"></div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row justify-start items-center gap-8"
+          >
+            <div
+              class="w-full sm:w-[239px] flex flex-col justify-center items-start gap-6"
+            >
+              <div
+                class="px-6 w-full py-16 bg-white shadow flex flex-col justify-start items-start gap-5"
+              >
+                <div
+                  class="px-[19px] py-[22px] bg-blue-200 rounded-[10px] flex flex-col justify-start items-start gap-2.5"
+                >
+                  <img
+                    class="w-10 h-10 absolute -ml-1"
+                    src="assets/img/fixed-width sec-.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="text-[#252b42] text-base font-bold font-montserrat leading-normal tracking-tight"
+                >
+                  Soins contre le cancer
+                </div>
+                <div class="w-[50px] h-0.5 bg-[#e64040]"></div>
+                <div
+                  class="text-[#727272] text-sm font-normal font-montserrat leading-tight tracking-tight"
+                >
+                  L'accumulation <br />progressive d'informations sur
+                </div>
+              </div>
+
+              <div
+                class="px-6 py-16 bg-white shadow flex flex-col justify-start items-start gap-5"
+              >
+                <div
+                  class="py-10 px-9 h-10 bg-blue-100 rounded-[10px] flex flex-col justify-start items-start gap-2.5"
+                >
+                  <img
+                    class="w-10 h-10 -mt-5 -ml-5 absolute"
+                    src="assets/img/fixed-width sec-s.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="text-[#252b42] text-base font-bold font-montserrat leading-normal tracking-tight"
+                >
+                  Consultation
+                </div>
+                <div class="w-[50px] h-0.5 bg-[#e64040]"></div>
+                <div
+                  class="text-[#727272] text-sm font-normal font-montserrat leading-tight tracking-tight"
+                >
+                  Prenez rendez-vous en ligne pour éviter l'attente
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full sm:w-[239px] border-2 flex flex-col justify-center items-center gap-6"
+            >
+              <div
+                class="px-6 sm:w-[14rem] w-full py-12 bg-white shadow flex flex-col justify-start items-start gap-5"
+              >
+                <div
+                  class="px-[19px] py-[22px] bg-[#b6d7ff] rounded-[10px] flex flex-col justify-start items-start gap-2.5"
+                >
+                  <div
+                    class="w-8 h-8 justify-center items-center inline-flex"
+                  ></div>
+                </div>
+                <div
+                  class="text-[#252b42] text-base font-bold font-montserrat leading-normal tracking-tight"
+                >
+                  Book now
+                </div>
+                <div class="w-[50px] h-0.5 bg-[#e64040]"></div>
+                <div
+                  class="text-[#727272] text-sm font-normal font-montserrat leading-tight tracking-tight"
+                >
+                  The gradual <br />accumulation of <br />information about
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full min-h-[676px] px-4 justify-center items-center flex bg-white"
+    >
+      <div class="flex flex-col justify-start items-center py-20 w-full">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center w-full sm:px-32"
+        >
+          <div class="flex justify-start items-start gap-8">
+            <div class="sm:relative w-full h-[513px]">
+              <div
+                class="w-[25rem] h-[25rem] left-[54.55px] top-[66.28px] absolute bg-blue-600 rounded-full"
+              ></div>
+              <div
+                class="w-[71.38px] h-[71.38px] left-[0.69px] top-[77.32px] absolute bg-blue-600 rounded-full"
+              ></div>
+              <img
+                class="w-[370.70px] h-auto sm:mx-auto sm:left-20 mt-1 relative"
+                src="assets/img/technology 1.png"
+                alt="Technology"
+              />
+              <div
+                class="w-[40.88px] h-[40.88px] left-[471.81px] top-[441.36px] absolute bg-blue-600 rounded-full"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-start items-start gap-8 w-full max-w-[420px]"
+          >
+            <div class="w-[94px] h-[7px] bg-[#fc724d]"></div>
+            <div
+              class="text-[#252b42] text-4xl md:text-5xl font-bold font-montserrat leading-tight tracking-tight"
+            >
+              Médecine de pointe
+            </div>
+            <div
+              class="w-full text-[#727272] text-xl md:text-2xl font-normal font-montserrat leading-tight tracking-tight"
+            >
+              Nos médecins sont à votre disposition pour un service de qualité.
+              <br />Prendre soin de nos patients est notre combat
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center w-full h-[163px] sm:-mt-20 relative bg-blue-100"
+    >
+      <div
+        class="absolute top-1/2 py-3 transform -translate-y-1/2 w-4/6 sm:w-3/12 md:w-4/12 text-xs sm:text-2xl  bg-orange-500 rounded cursor-pointer hover:bg-orange-300 transition-colors duration-300 text-center text-white font-bold font-['Montserrat'] leading-loose tracking-tight"
+      >
+        Commencez votre consultation
+      </div>
+    </div>
+
+    <!-- Section -->
+    <!-- <div class="w-full h-[656px] bg-blue-800 flex justify-center items-center">
+      <div class="flex-col justify-start items-center gap-20 py-20">
+        <div class="h-[100px] flex-col justify-start items-start flex">
+          <div class="h-[100px] flex-col justify-start items-start gap-2.5 flex">
+            <div class="w-[828px] text-white text-5xl font-bold font-['Montserrat'] leading-[50px] tracking-tight">
+              Nos médecins se spécialisent en vous
+            </div>
+            <p class="w-full text-white text-2xl font-normal font-['Montserrat'] leading-tight tracking-tight">
+              Problèmes tentent de résoudre le conflit entre les deux grands domaines de la physique classique
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full">
+              <img class="w-full h-auto" src="assets/img/product-card.png" alt="Médecin 1" />
+            </div>
+          </div>
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full my-2">
+              <img class="w-full h-auto" src="assets/img/product-card2.png" alt="Médecin 2" />
+            </div>
+          </div>
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full">
+              <img class="w-full h-auto" src="assets/img/product-card3.png" alt="Médecin 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="w-full h-[656px] bg-blue-800 flex justify-center items-center px-4 md:px-2">
+      <div class="flex-col justify-start items-center gap-20 py-20 max-w-7xl mx-auto">
+        <div class="h-[100px] flex-col justify-start items-start flex text-center">
+          <div class="w-full text-white text-5xl font-bold font-['Montserrat'] leading-[50px] tracking-tight">
+            Nos médecins se spécialisent en vous
+          </div>
+          <p class="w-full text-white text-2xl font-normal font-['Montserrat'] leading-tight tracking-tight">
+            Problèmes tentent de résoudre le conflit entre les deux grands domaines de la physique classique
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full">
+              <img class="w-full h-auto rounded-lg" src="assets/img/product-card.png" alt="Médecin 1" />
+            </div>
+          </div>
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full my-2">
+              <img class="w-full h-auto rounded-lg" src="assets/img/product-card2.png" alt="Médecin 2" />
+            </div>
+          </div>
+          <div class="w-full flex-col justify-start items-center inline-flex">
+            <div class="relative w-full h-full">
+              <img class="w-full h-auto rounded-lg" src="assets/img/product-card3.png" alt="Médecin 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End Section -->
+  </section>
+
+  <!-- Footer -->
+  <!-- <div class="w-full h-auto bg-[#f9f9f9] flex-col justify-center items-start inline-flex">
+    <div class="self-stretch h-auto px-10 pb-5 bg-[#26335d] justify-center items-center inline-flex">
+      <div class="w-full py-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+        <div class="w-full flex-col justify-start items-start gap-5 inline-flex">
+          <div class="text-white text-base font-bold font-['Montserrat']">Company Info</div>
+          <div class="flex-col justify-start items-start gap-2.5 flex">
+            <div class="text-white text-sm font-bold font-['Montserrat']">About Us</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Carrier</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">We are hiring</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Blog</div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-col justify-start items-start gap-5 inline-flex">
+          <div class="text-white text-base font-bold font-['Montserrat']">Legal</div>
+          <div class="flex-col justify-start items-start gap-2.5 flex">
+            <div class="text-white text-sm font-bold font-['Montserrat']">Terms of Service</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Privacy Policy</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Legal Information</div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-col justify-start items-start gap-5 inline-flex">
+          <div class="text-white text-base font-bold font-['Montserrat']">Features</div>
+          <div class="flex-col justify-start items-start gap-2.5 flex">
+            <div class="text-white text-sm font-bold font-['Montserrat']">Business Marketing</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">User Analytic</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Live Chat</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Unlimited Support</div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-col justify-start items-start gap-5 inline-flex">
+          <div class="text-white text-base font-bold font-['Montserrat']">Resources</div>
+          <div class="flex-col justify-start items-start gap-2.5 flex">
+            <div class="text-white text-sm font-bold font-['Montserrat']">IOS & Android</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Watch a Demo</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">Customers</div>
+            <div class="text-white text-sm font-bold font-['Montserrat']">API</div>
+          </div>
+        </div>
+  
+        <div class="w-full flex-col justify-start items-start gap-5 inline-flex">
+          <div class="text-white text-base font-bold font-['Montserrat']">Get In Touch</div>
+          <div class="flex-col justify-start items-center gap-2.5 flex">
+            <div class="justify-start items-center gap-2.5 inline-flex">
+              <div class="w-6 h-6 justify-center items-center flex"></div>
+              <div class="text-white text-sm font-bold font-['Montserrat']">(480) 555-0103</div>
+            </div>
+            <div class="justify-start items-center gap-2.5 inline-flex">
+              <div class="w-6 h-[30px] flex-col justify-center items-center inline-flex"></div>
+              <div class="text-white text-sm font-bold font-['Montserrat']">4517 Washington Ave. Manchester, Kentucky 39495</div>
+            </div>
+            <div class="justify-start items-center gap-2.5 inline-flex">
+              <div class="w-6 h-[26px] justify-center items-center inline-flex"></div>
+              <div class="text-white text-sm font-bold font-['Montserrat']">debraholtexample.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- End Footer -->
+</div>

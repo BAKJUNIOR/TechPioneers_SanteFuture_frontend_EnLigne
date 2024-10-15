@@ -1,0 +1,33 @@
+<div
+  class="flex flex-col min-w-0 break-words bg-white shadow-2xl w-[30rem] p-1 rounded xl:mb-0"
+>
+  <div class="flex-auto">
+    <div class="flex flex-wrap p-2">
+      <div class="relative w-full max-w-full flex-grow flex-1">
+        <h5 class="text-blue-400 font-serif text-sm">
+          <canvas
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [type]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"
+          >
+          </canvas>
+
+          <button
+            mat-button
+            mat-raised-button
+            color="primary"
+            (click)="randomize()"
+          ></button>
+        </h5>
+        <span class="font-semibold text-xl text-blue-700"> </span>
+      </div>
+      <div class="relative w-auto pl-4 flex-initial"></div>
+    </div>
+    <p class="text-sm text-blue-400 mt-4">
+      <span class="mr-2"> </span>
+    </p>
+  </div>
+</div>
